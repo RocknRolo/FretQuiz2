@@ -1,17 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     background-color: #222;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     display: flex;
-    justify-content: center;
     color: gray;
+    justify-content: center;
 }
 
 a:visited {
@@ -22,43 +19,45 @@ a:hover {
     color: yellow;
 }
 
+#canvas1 {
+    position: absolute;
+    z-index: 0;
+}
+
+#canvas2 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+}
+
 #header {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 4rem;
-    text-align: center;
 }
 
 #question {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 3rem;
-    text-align: center;
-}
 
-#buttons {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-button {
-    font-size: 2.5rem;
-    width: 10%;
-    margin: 10px;
 }
 
 #fretboard {
     font-family: "courier new", sans-serif;
     font-size: 3rem;
     color: white;
-    text-align: center;
-    margin: 1rem;
 }
 
+/* Scoreboard */
+
 #scoreboard {
-    display: inline-flex;
+    display: flex;
     color: white;
     font-size: 2rem;
-}
+    align-items: flex-end;}
 
 #score_label {
     margin: 10px;
